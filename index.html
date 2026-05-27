@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Udit Ranjan — Software Developer | Backend Engineer</title>
+  <meta name="description" content="Backend Developer with production experience designing scalable microservices, distributed systems, storage integrations, and AI-driven platforms. Spring Boot | Redis | JWT/RBAC | AI Systems." />
+  <meta name="keywords" content="Udit Ranjan, Backend Developer, Software Engineer, Spring Boot, Microservices, Redis, JWT, RBAC, AI Systems, Distributed Systems, Java, Bengaluru" />
+  <meta name="author" content="Udit Ranjan" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://uditranjan.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://uditranjan.vercel.app/" />
+  <meta property="og:title" content="Udit Ranjan — Software Developer | Backend Engineer" />
+  <meta property="og:description" content="Backend Developer with production experience designing scalable microservices, distributed systems, and AI-driven platforms." />
+  <meta property="og:image" content="https://uditranjan.vercel.app/assets/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Udit Ranjan — Software Developer" />
+  <meta name="twitter:description" content="Backend Developer | Spring Boot | Redis | AI Systems | Distributed Systems" />
+  <meta name="twitter:image" content="https://uditranjan.vercel.app/assets/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Udit Ranjan",
+    "jobTitle": "Software Developer | Backend Engineer",
+    "email": "uditranjan11@gmail.com",
+    "telephone": "+91-9104456239",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bengaluru",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN"
+    },
+    "url": "https://uditranjan.vercel.app",
+    "sameAs": [
+      "https://www.linkedin.com/in/udit-ranjan-5b7b67222/",
+      "https://github.com/Phonix10"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+  <!-- Animated Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <span class="logo-text">UR</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#github" class="nav-link" data-section="github">GitHub</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="nav-socials">
+          <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="nav-social-icon" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/udit-ranjan-5b7b67222/" target="_blank" rel="noopener noreferrer" class="nav-social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+        <a href="assets/resume.pdf" download class="btn-resume" id="btn-resume">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== FLOATING SOCIAL DOCK ========== -->
+  <div class="social-dock" id="social-dock">
+    <div class="social-dock-line top"></div>
+    <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="dock-icon" aria-label="GitHub" data-tooltip="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/udit-ranjan-5b7b67222/" target="_blank" rel="noopener noreferrer" class="dock-icon" aria-label="LinkedIn" data-tooltip="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+    <a href="mailto:uditranjan11@gmail.com" class="dock-icon" aria-label="Email" data-tooltip="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </a>
+    <div class="social-dock-line bottom"></div>
+  </div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="hero-badge animate-fade-up" style="--delay: 0.1s">
+          <span class="badge-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+
+        <h1 class="hero-name animate-fade-up" style="--delay: 0.2s">
+          <span class="name-line">UDIT</span>
+          <span class="name-line gradient-text">RANJAN</span>
+        </h1>
+
+        <div class="hero-title animate-fade-up" style="--delay: 0.3s">
+          <span class="title-prefix">&lt;</span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="title-suffix">/&gt;</span>
+        </div>
+
+        <p class="hero-tagline animate-fade-up" style="--delay: 0.4s">
+          Building scalable backend systems, AI-powered platforms, and production-grade software.
+        </p>
+
+        <p class="hero-intro animate-fade-up" style="--delay: 0.5s">
+          Backend Developer with production experience designing scalable microservices, distributed systems, storage integrations, and AI-driven platforms. Passionate about solving real-world infrastructure challenges.
+        </p>
+
+        <div class="hero-location animate-fade-up" style="--delay: 0.55s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Bengaluru, Karnataka, India</span>
+        </div>
+
+        <div class="hero-cta animate-fade-up" style="--delay: 0.6s">
+          <a href="#contact" class="btn-primary" id="btn-hire-me">
+            <span>Hire Me</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#projects" class="btn-secondary" id="btn-view-projects">
+            <span>View Projects</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-social-badges animate-fade-up" style="--delay: 0.7s">
+          <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="social-badge" id="badge-github">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/udit-ranjan-5b7b67222/" target="_blank" rel="noopener noreferrer" class="social-badge" id="badge-linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:uditranjan11@gmail.com" class="social-badge" id="badge-email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right animate-fade-left" style="--delay: 0.3s">
+        <div class="hero-image-wrapper">
+          <div class="image-glow-ring"></div>
+          <div class="image-glow-ring ring-2"></div>
+          <div class="hero-image-frame">
+            <img src="assets/hero_portrait.png" alt="Udit Ranjan - Backend Developer" class="hero-portrait" id="hero-portrait" />
+            <div class="image-glass-overlay"></div>
+          </div>
+          <!-- Floating tech badges -->
+          <div class="floating-badge fb-1">
+            <span class="fb-icon">☕</span>
+            <span>Spring Boot</span>
+          </div>
+          <div class="floating-badge fb-2">
+            <span class="fb-icon">⚡</span>
+            <span>Microservices</span>
+          </div>
+          <div class="floating-badge fb-3">
+            <span class="fb-icon">🤖</span>
+            <span>AI Systems</span>
+          </div>
+          <div class="floating-badge fb-4">
+            <span class="fb-icon">🔴</span>
+            <span>Redis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll down</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">WHO I AM</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-portrait-wrapper">
+            <div class="about-portrait-glow"></div>
+            <img src="assets/about_portrait.png" alt="Udit Ranjan" class="about-portrait" />
+            <div class="about-card-overlay">
+              <div class="about-card-info">
+                <span class="card-role">Backend Developer</span>
+                <span class="card-location">📍 Bengaluru, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card" id="stat-experience">
+              <span class="stat-num" data-target="1">0</span>
+              <span class="stat-plus">+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card" id="stat-projects">
+              <span class="stat-num" data-target="10">0</span>
+              <span class="stat-plus">+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card" id="stat-tech">
+              <span class="stat-num" data-target="15">0</span>
+              <span class="stat-plus">+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content-col">
+          <h3 class="about-heading">Backend Developer building the systems that <span class="gradient-text">power the future</span></h3>
+          <p class="about-text">
+            I'm Udit Ranjan, a Software Developer specializing in backend engineering. I design and build scalable microservices architectures, distributed systems, and AI-driven platforms that solve real-world problems at scale.
+          </p>
+          <p class="about-text">
+            My expertise spans Spring Boot microservices, Redis caching, JWT/RBAC security systems, and distributed systems engineering. I'm passionate about performance optimization, clean architecture, and writing production-grade code that stands the test of time.
+          </p>
+          <p class="about-text">
+            Based in Bengaluru, the heart of India's tech ecosystem, I'm always looking to tackle ambitious engineering challenges and collaborate on impactful projects.
+          </p>
+
+          <div class="about-traits">
+            <div class="trait-item">
+              <span class="trait-icon">⚙️</span>
+              <div>
+                <strong>Systems Thinker</strong>
+                <span>Architecture-first approach to problem solving</span>
+              </div>
+            </div>
+            <div class="trait-item">
+              <span class="trait-icon">🚀</span>
+              <div>
+                <strong>Performance Obsessed</strong>
+                <span>Built systems handling high-throughput workloads</span>
+              </div>
+            </div>
+            <div class="trait-item">
+              <span class="trait-icon">🤖</span>
+              <div>
+                <strong>AI Enthusiast</strong>
+                <span>Integrating AI into production backend systems</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="#contact" class="btn-primary">Get In Touch</a>
+            <a href="assets/resume.pdf" download class="btn-outline" id="btn-download-resume">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE SECTION ========== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">MY JOURNEY</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">From intern to software developer — building production systems that scale.</p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- ---- EXP 01: Niral Networks ---- -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-connector"></div>
+          <div class="timeline-dot active">
+            <div class="dot-inner"></div>
+            <div class="dot-pulse"></div>
+            <div class="dot-ring"></div>
+          </div>
+          <div class="timeline-card glass-card tl-card-primary">
+            <div class="tl-card-glow"></div>
+
+            <div class="tl-top-bar">
+              <div class="tl-company-badge">
+                <div class="tl-company-logo nn-logo">NN</div>
+                <div class="tl-company-info">
+                  <span class="tl-company-name">Niral Networks</span>
+                  <span class="tl-company-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Bengaluru, India
+                  </span>
+                </div>
+              </div>
+              <div class="tl-status-badge current-badge">
+                <span class="status-dot"></span>
+                Currently Here
+              </div>
+            </div>
+
+            <div class="tl-role-timeline">
+              <div class="tl-role-current">
+                <div class="tl-role-header">
+                  <h3 class="tl-role-title">Software Developer I</h3>
+                  <span class="tl-role-period">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    Jan 2026 – Present
+                  </span>
+                </div>
+              </div>
+              <div class="tl-role-divider">
+                <span class="tl-role-prev-label">↑ Promoted from</span>
+              </div>
+              <div class="tl-role-prev">
+                <div class="tl-role-header">
+                  <h4 class="tl-role-title-prev">Software Trainee</h4>
+                  <span class="tl-role-period-prev">Aug 2025 – Jan 2026</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="tl-desc">
+              Working on production-grade backend platforms and distributed systems. Designing scalable microservices, optimizing performance with Redis caching, integrating cloud storage, and contributing to AI-assisted controller automation.
+            </p>
+
+            <!-- Metric chips -->
+            <div class="tl-metrics-row">
+              <div class="tl-metric-chip">
+                <span class="chip-val">35–40%</span>
+                <span class="chip-label">API Latency Reduced</span>
+              </div>
+              <div class="tl-metric-chip">
+                <span class="chip-val">S3</span>
+                <span class="chip-label">Multi-tenant Storage</span>
+              </div>
+              <div class="tl-metric-chip">
+                <span class="chip-val">JWT+RBAC</span>
+                <span class="chip-label">Secure APIs</span>
+              </div>
+            </div>
+
+            <div class="tl-achievements">
+              <div class="tl-ach-item"><span class="tl-ach-dot"></span><span>Reduced API latency by 35–40% using Redis caching strategies</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot"></span><span>Implemented multi-tenant S3 storage architecture</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot"></span><span>Integrated SAN infrastructure using TrueNAS</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot"></span><span>Built secure APIs with JWT authentication and RBAC</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot"></span><span>Contributed to AI-assisted controller automation</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot"></span><span>Performance tuning, optimization & production deployment support</span></div>
+            </div>
+
+            <div class="tl-tags">
+              <span class="tl-tag">Java</span>
+              <span class="tl-tag">Spring Boot</span>
+              <span class="tl-tag">Redis</span>
+              <span class="tl-tag">MongoDB</span>
+              <span class="tl-tag">Docker</span>
+              <span class="tl-tag">S3</span>
+              <span class="tl-tag">JWT</span>
+              <span class="tl-tag">REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- EXP 02: Outlier ---- -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-connector"></div>
+          <div class="timeline-dot">
+            <div class="dot-inner"></div>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="tl-card-glow purple-glow"></div>
+
+            <div class="tl-top-bar">
+              <div class="tl-company-badge">
+                <div class="tl-company-logo outlier-logo">OL</div>
+                <div class="tl-company-info">
+                  <span class="tl-company-name">Outlier</span>
+                  <span class="tl-company-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Remote
+                  </span>
+                </div>
+              </div>
+              <div class="tl-period-badge">Aug 2024 – Apr 2025</div>
+            </div>
+
+            <div class="tl-role-simple">
+              <h3 class="tl-role-title">AI Model Trainer</h3>
+              <span class="tl-role-type-tag ai-tag">AI / LLM</span>
+            </div>
+
+            <p class="tl-desc">
+              Evaluated and improved AI-generated code quality for LLM training pipelines. Performed prompt engineering, code optimization, and debugging to enhance model responses and reliability across multiple programming domains.
+            </p>
+
+            <div class="tl-achievements">
+              <div class="tl-ach-item"><span class="tl-ach-dot purple"></span><span>Evaluated AI-generated code for quality and correctness</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot purple"></span><span>Improved LLM model quality through structured feedback</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot purple"></span><span>Advanced prompt engineering for complex code scenarios</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot purple"></span><span>Code optimization, debugging and validation workflows</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot purple"></span><span>Trained and validated LLM code generation workflows</span></div>
+            </div>
+
+            <div class="tl-tags">
+              <span class="tl-tag">Python</span>
+              <span class="tl-tag">Java</span>
+              <span class="tl-tag">LLM</span>
+              <span class="tl-tag">AI</span>
+              <span class="tl-tag">Prompt Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- EXP 03: Hackveda ---- -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-connector"></div>
+          <div class="timeline-dot">
+            <div class="dot-inner"></div>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="tl-card-glow blue-glow"></div>
+
+            <div class="tl-top-bar">
+              <div class="tl-company-badge">
+                <div class="tl-company-logo hackveda-logo">HV</div>
+                <div class="tl-company-info">
+                  <span class="tl-company-name">Hackveda</span>
+                  <span class="tl-company-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    India
+                  </span>
+                </div>
+              </div>
+              <div class="tl-period-badge">Dec 2023 – May 2024</div>
+            </div>
+
+            <div class="tl-role-simple">
+              <h3 class="tl-role-title">Python Developer Intern</h3>
+              <span class="tl-role-type-tag intern-tag">Internship</span>
+            </div>
+
+            <p class="tl-desc">
+              Developed automation pipelines and data processing scripts. Built production features that reduced manual effort significantly and improved platform efficiency through robust Python engineering.
+            </p>
+
+            <div class="tl-achievements">
+              <div class="tl-ach-item"><span class="tl-ach-dot blue"></span><span>Built end-to-end automation pipelines</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot blue"></span><span>Data extraction, processing and analysis workflows</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot blue"></span><span>Significantly reduced manual engineering effort</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot blue"></span><span>Delivered production-ready features independently</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot blue"></span><span>Improved overall platform efficiency and throughput</span></div>
+            </div>
+
+            <div class="tl-tags">
+              <span class="tl-tag">Python</span>
+              <span class="tl-tag">REST APIs</span>
+              <span class="tl-tag">Data Processing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- EXP 04: Internshala ---- -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-connector last-connector"></div>
+          <div class="timeline-dot">
+            <div class="dot-inner"></div>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="tl-card-glow green-glow"></div>
+
+            <div class="tl-top-bar">
+              <div class="tl-company-badge">
+                <div class="tl-company-logo internshala-logo">IS</div>
+                <div class="tl-company-info">
+                  <span class="tl-company-name">Internshala</span>
+                  <span class="tl-company-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    India
+                  </span>
+                </div>
+              </div>
+              <div class="tl-period-badge">May 2023 – Jul 2023</div>
+            </div>
+
+            <div class="tl-role-simple">
+              <h3 class="tl-role-title">Student Partner</h3>
+              <span class="tl-role-type-tag partner-tag">Community</span>
+            </div>
+
+            <p class="tl-desc">
+              Represented Internshala on campus as a Student Partner — driving community engagement, organizing events, building the brand presence, and developing strong leadership and networking skills.
+            </p>
+
+            <div class="tl-achievements">
+              <div class="tl-ach-item"><span class="tl-ach-dot green"></span><span>Community building and student engagement initiatives</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot green"></span><span>Event promotion and campus branding activities</span></div>
+              <div class="tl-ach-item"><span class="tl-ach-dot green"></span><span>Demonstrated leadership and networking excellence</span></div>
+            </div>
+
+            <div class="tl-tags">
+              <span class="tl-tag">Leadership</span>
+              <span class="tl-tag">Community</span>
+              <span class="tl-tag">Branding</span>
+              <span class="tl-tag">Networking</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">WHAT I'VE BUILT</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Production systems, AI/ML models, security platforms and backend services.</p>
+      </div>
+
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+        <button class="filter-btn" data-filter="ai" id="filter-ai">AI / ML</button>
+        <button class="filter-btn" data-filter="backend" id="filter-backend">Backend</button>
+        <button class="filter-btn" data-filter="security" id="filter-security">Security</button>
+        <button class="filter-btn" data-filter="automation" id="filter-automation">Automation</button>
+        <button class="filter-btn" data-filter="lld" id="filter-lld">LLD</button>
+      </div>
+
+      <!-- FEATURED HERO PROJECTS -->
+      <div class="projects-featured">
+
+        <div class="project-card glass-card featured hero-project" data-category="ai" data-reveal>
+          <div class="project-featured-ribbon">&#11088; Featured</div>
+          <div class="project-card-header">
+            <div class="project-icon">&#128200;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10/stock_price_preductioon" target="_blank" rel="noopener noreferrer" class="project-link-btn github-btn" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-category-chip ai-chip">AI / ML</div>
+          <h3 class="project-title">Stock Price Prediction Engine</h3>
+          <p class="project-desc">Advanced stock prediction engine combining sentiment analysis, LSTM deep learning, technical indicators (RSI), and macroeconomic data (USDINR, oil prices). Achieves 99.6% prediction accuracy with real-time NIFTY forecasting.</p>
+          <div class="project-highlight-metric">
+            <span class="ph-val">99.6%</span>
+            <span class="ph-label">Prediction Accuracy</span>
+          </div>
+          <div class="project-feature-list">
+            <span>&#128240; News Sentiment</span>
+            <span>&#128202; NIFTY Prediction</span>
+            <span>&#9889; RSI Indicators</span>
+            <span>&#128738; Oil &amp; USDINR Impact</span>
+            <span>&#128200; Forecast Visualization</span>
+          </div>
+          <div class="project-tech">
+            <span>Python</span><span>TensorFlow</span><span>LSTM</span><span>Pandas</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card featured hero-project" data-category="security" data-reveal>
+          <div class="project-featured-ribbon">&#128274; Security</div>
+          <div class="project-card-header">
+            <div class="project-icon">&#128737;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10/waf-ai-platform" target="_blank" rel="noopener noreferrer" class="project-link-btn github-btn" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-category-chip security-chip">Cyber Security + AI</div>
+          <h3 class="project-title">AI-Powered WAF + Intrusion Detection</h3>
+          <p class="project-desc">Production-grade Web Application Firewall with AI-driven intrusion detection using Isolation Forest and XGBoost. Real-time SOC dashboard, explainable AI decisions, and automatic WAF rule generation.</p>
+          <div class="project-feature-list">
+            <span>&#129302; Isolation Forest ML</span>
+            <span>&#128202; Real-time SOC Dashboard</span>
+            <span>&#9889; XGBoost Classifier</span>
+            <span>&#128269; Explainable AI</span>
+            <span>&#128737; Auto WAF Rules</span>
+          </div>
+          <div class="project-tech">
+            <span>FastAPI</span><span>Python</span><span>Streamlit</span><span>Docker</span><span>ML</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- REGULAR PROJECTS GRID -->
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card glass-card" data-category="automation" data-reveal>
+          <div class="project-card-header">
+            <div class="project-icon">&#128231;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10/AutoReach" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge automation">Automation</div>
+          <h3 class="project-title">AutoReach</h3>
+          <p class="project-desc">Automated job application assistant — cold outreach platform automating bulk HR email applications with personalized templates and Excel-based resume targeting.</p>
+          <div class="project-tech"><span>Python</span><span>Pandas</span><span>Email Automation</span></div>
+          <div class="project-metrics">
+            <div class="metric"><span class="m-val">Bulk</span><span class="m-label">Applications</span></div>
+            <div class="metric"><span class="m-val">Auto</span><span class="m-label">Personalized</span></div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="ai" data-reveal>
+          <div class="project-card-header">
+            <div class="project-icon">&#127916;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge ai">Deep Learning</div>
+          <h3 class="project-title">Movie Recommendation System</h3>
+          <p class="project-desc">CNN-powered recommendation engine using poster embeddings, emotion recognition and real-time prediction via Streamlit UI.</p>
+          <div class="project-tech"><span>TensorFlow</span><span>CNN</span><span>OpenCV</span><span>Python</span></div>
+          <div class="project-metrics">
+            <div class="metric"><span class="m-val">CNN</span><span class="m-label">Embeddings</span></div>
+            <div class="metric"><span class="m-val">Emotion</span><span class="m-label">Detection</span></div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="backend" data-reveal>
+          <div class="project-card-header">
+            <div class="project-icon">&#127944;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge">Backend</div>
+          <h3 class="project-title">Hotel Booking Management</h3>
+          <p class="project-desc">Full-featured hotel booking backend with JWT authentication, RBAC, room booking workflows, input validation, logging and comprehensive test coverage.</p>
+          <div class="project-tech"><span>Spring Boot</span><span>JWT</span><span>MySQL</span></div>
+          <div class="project-metrics">
+            <div class="metric"><span class="m-val">JWT</span><span class="m-label">Auth</span></div>
+            <div class="metric"><span class="m-val">RBAC</span><span class="m-label">Access</span></div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="backend" data-reveal>
+          <div class="project-card-header">
+            <div class="project-icon">&#128038;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge">Backend</div>
+          <h3 class="project-title">XMeme Backend</h3>
+          <p class="project-desc">Meme upload and sharing REST API platform with MongoDB persistence, Docker containerization and full Swagger documentation.</p>
+          <div class="project-tech"><span>Spring Boot</span><span>MongoDB</span><span>Docker</span></div>
+          <div class="project-metrics">
+            <div class="metric"><span class="m-val">REST</span><span class="m-label">APIs</span></div>
+            <div class="metric"><span class="m-val">Docker</span><span class="m-label">Containerized</span></div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="backend" data-reveal>
+          <div class="project-card-header">
+            <div class="project-icon">&#127829;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge">Backend</div>
+          <h3 class="project-title">QEats</h3>
+          <p class="project-desc">Restaurant discovery and food ordering backend with advanced search, performance optimization, and production debugging. High-performance Spring Boot microservice.</p>
+          <div class="project-tech"><span>Spring Boot</span><span>MongoDB</span></div>
+          <div class="project-metrics">
+            <div class="metric"><span class="m-val">Search</span><span class="m-label">Optimized</span></div>
+            <div class="metric"><span class="m-val">Prod</span><span class="m-label">Debugged</span></div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="backend" data-reveal>
+          <div class="project-card-header">
+            <div class="project-icon">&#128218;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10/RentVideo_video_rent_system" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge">Backend</div>
+          <h3 class="project-title">RentRead</h3>
+          <p class="project-desc">Book rental workflow management with basic auth, full CRUD operations, and rental tracking. Clean Spring Boot backend with MySQL persistence.</p>
+          <div class="project-tech"><span>Spring Boot</span><span>MySQL</span></div>
+          <div class="project-metrics">
+            <div class="metric"><span class="m-val">CRUD</span><span class="m-label">Full</span></div>
+            <div class="metric"><span class="m-val">Auth</span><span class="m-label">Protected</span></div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="lld" data-reveal>
+          <div class="project-card-header">
+            <div class="project-icon">&#129513;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge lld">LLD</div>
+          <h3 class="project-title">Xlido — Event Platform</h3>
+          <p class="project-desc">Low-level design for event creation and Q&amp;A platform applying OOP and SOLID principles. Extensible Java architecture for scalable platform design.</p>
+          <div class="project-tech"><span>Java</span><span>LLD</span><span>OOP</span><span>SOLID</span></div>
+          <div class="project-metrics">
+            <div class="metric"><span class="m-val">SOLID</span><span class="m-label">Principles</span></div>
+            <div class="metric"><span class="m-val">OOP</span><span class="m-label">Design</span></div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="backend" data-reveal>
+          <div class="project-card-header">
+            <div class="project-icon">&#128308;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10/redis_learning" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge">Backend</div>
+          <h3 class="project-title">Redis Learning</h3>
+          <p class="project-desc">Deep-dive into Redis data structures, caching patterns, Pub/Sub, Lua scripting and Java Spring integration. Comprehensive Redis engineering reference.</p>
+          <div class="project-tech"><span>Redis</span><span>Java</span><span>Spring</span></div>
+          <div class="project-metrics">
+            <div class="metric"><span class="m-val">Cache</span><span class="m-label">Patterns</span></div>
+            <div class="metric"><span class="m-val">Pub/Sub</span><span class="m-label">Messaging</span></div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="lld" data-reveal>
+          <div class="project-card-header">
+            <div class="project-icon">&#128214;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10/Library-Management-System" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge lld">LLD</div>
+          <h3 class="project-title">Library Management System</h3>
+          <p class="project-desc">Complete library management with book tracking, member management, checkout workflows and fine calculations in clean Java LLD design.</p>
+          <div class="project-tech"><span>Java</span><span>OOP</span></div>
+          <div class="project-metrics">
+            <div class="metric"><span class="m-val">LLD</span><span class="m-label">Design</span></div>
+            <div class="metric"><span class="m-val">Java</span><span class="m-label">Core</span></div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="lld" data-reveal>
+          <div class="project-card-header">
+            <div class="project-icon">&#127903;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10/Movie_Ticket_Booking_System" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge lld">LLD</div>
+          <h3 class="project-title">Movie Ticket Booking</h3>
+          <p class="project-desc">Ticket booking system with seat selection, show management and booking confirmation. Clean Java LLD implementation of a cinema booking platform.</p>
+          <div class="project-tech"><span>Java</span><span>OOP</span></div>
+          <div class="project-metrics">
+            <div class="metric"><span class="m-val">Seats</span><span class="m-label">Allocation</span></div>
+            <div class="metric"><span class="m-val">Shows</span><span class="m-label">Management</span></div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="backend" data-reveal>
+          <div class="project-card-header">
+            <div class="project-icon">&#127891;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10/student-management-system" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge">Backend</div>
+          <h3 class="project-title">Student Management System</h3>
+          <p class="project-desc">Spring Boot backend for managing student records, courses, grades and enrollment with full REST API, validation and structured error responses.</p>
+          <div class="project-tech"><span>Spring Boot</span><span>MySQL</span></div>
+          <div class="project-metrics">
+            <div class="metric"><span class="m-val">REST</span><span class="m-label">API</span></div>
+            <div class="metric"><span class="m-val">CRUD</span><span class="m-label">Full</span></div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="backend" data-reveal>
+          <div class="project-card-header">
+            <div class="project-icon">&#9925;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge">Backend</div>
+          <h3 class="project-title">MinIO Object Storage</h3>
+          <p class="project-desc">S3-compatible object storage with MinIO — bucket management, file upload/download, presigned URLs and multi-tenant storage patterns in Java.</p>
+          <div class="project-tech"><span>S3</span><span>MinIO</span><span>Java</span></div>
+          <div class="project-metrics">
+            <div class="metric"><span class="m-val">S3</span><span class="m-label">Compatible</span></div>
+            <div class="metric"><span class="m-val">Multi</span><span class="m-label">Tenant</span></div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="lld" data-reveal>
+          <div class="project-card-header">
+            <div class="project-icon">&#128664;</div>
+            <div class="project-links">
+              <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge lld">LLD</div>
+          <h3 class="project-title">Parking Management System</h3>
+          <p class="project-desc">Smart parking lot with slot allocation, vehicle tracking, billing and occupancy tracking. Classic LLD design problem with clean Java architecture.</p>
+          <div class="project-tech"><span>Java</span><span>LLD</span></div>
+          <div class="project-metrics">
+            <div class="metric"><span class="m-val">Slots</span><span class="m-label">Managed</span></div>
+            <div class="metric"><span class="m-val">Billing</span><span class="m-label">System</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-cta">
+        <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="btn-outline" id="btn-all-projects">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          View All 18+ Projects on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GITHUB SECTION ========== -->
+  <section id="github" class="section github-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">OPEN SOURCE</span>
+        <h2 class="section-title">GitHub <span class="gradient-text">Activity</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="github-profile-card glass-card" data-reveal>
+        <div class="github-profile-left">
+          <div class="github-avatar">
+            <img src="assets/hero_portrait.png" alt="Udit Ranjan GitHub" />
+          </div>
+          <div class="github-info">
+            <h3>Udit Ranjan</h3>
+            <span class="github-handle">@Phonix10</span>
+            <p>Backend Developer | Spring Boot | Microservices | AI Systems</p>
+            <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="btn-github" id="btn-github-profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              View Profile
+            </a>
+          </div>
+        </div>
+        <div class="github-profile-stats" id="github-stats">
+          <div class="gh-stat-card">
+            <span class="gh-stat-icon">📦</span>
+            <span class="gh-stat-val" id="gh-repos">—</span>
+            <span class="gh-stat-label">Repositories</span>
+          </div>
+          <div class="gh-stat-card">
+            <span class="gh-stat-icon">⭐</span>
+            <span class="gh-stat-val" id="gh-stars">—</span>
+            <span class="gh-stat-label">Stars Earned</span>
+          </div>
+          <div class="gh-stat-card">
+            <span class="gh-stat-icon">👥</span>
+            <span class="gh-stat-val" id="gh-followers">—</span>
+            <span class="gh-stat-label">Followers</span>
+          </div>
+          <div class="gh-stat-card">
+            <span class="gh-stat-icon">💾</span>
+            <span class="gh-stat-val" id="gh-following">—</span>
+            <span class="gh-stat-label">Following</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub Contribution Heatmap -->
+      <div class="github-heatmap-wrapper glass-card" data-reveal>
+        <h3 class="heatmap-title">Contribution Activity</h3>
+        <div class="heatmap-container">
+          <img src="https://ghchart.rshah.org/7c3aed/Phonix10" alt="Udit Ranjan GitHub Contribution Chart" class="github-contrib-chart" id="github-contrib-chart" onerror="this.parentElement.innerHTML='<div class=heatmap-fallback><p>Contribution chart loading... <a href=https://github.com/Phonix10 target=_blank>View on GitHub</a></p></div>'" />
+        </div>
+        <p class="heatmap-caption">GitHub contributions over the past year</p>
+      </div>
+
+      <!-- Pinned Repos loaded from GitHub API -->
+      <div class="github-repos-grid" id="github-repos-grid">
+        <div class="repos-loading">
+          <div class="loading-spinner"></div>
+          <span>Loading repositories from GitHub...</span>
+        </div>
+      </div>
+
+      <!-- Language Breakdown -->
+      <div class="github-languages glass-card" data-reveal id="github-languages">
+        <h3>Language Breakdown</h3>
+        <div class="lang-bar-wrapper" id="lang-bar">
+          <div class="lang-loading">Fetching language data...</div>
+        </div>
+        <div class="lang-legend" id="lang-legend"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">EXPERTISE</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category glass-card" data-reveal>
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">☕</span>
+            <h3>Backend Development</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Java</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Spring Boot</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Spring Security</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Microservices</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>REST APIs</span><span class="skill-pct">92%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" data-reveal>
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🗃️</span>
+            <h3>Databases & Caching</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Redis</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>PostgreSQL</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>MySQL</span><span class="skill-pct">82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>MongoDB</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Hibernate/JPA</span><span class="skill-pct">86%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="86"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" data-reveal>
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🔐</span>
+            <h3>Security & Auth</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-item-header"><span>JWT</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>RBAC</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>OAuth 2.0</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>API Security</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" data-reveal>
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤖</span>
+            <h3>AI & Machine Learning</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Python</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>TensorFlow/Keras</span><span class="skill-pct">72%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>LSTM / NLP</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>AI System Design</span><span class="skill-pct">78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" data-reveal>
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">☁️</span>
+            <h3>Cloud & DevOps</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Docker</span><span class="skill-pct">82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>AWS</span><span class="skill-pct">72%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Git / GitHub</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>CI/CD</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card" data-reveal>
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🏛️</span>
+            <h3>Architecture & Patterns</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Distributed Systems</span><span class="skill-pct">83%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="83"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>System Design</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Design Patterns</span><span class="skill-pct">82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Event-Driven Arch</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack Icons -->
+      <div class="tech-stack-marquee" data-reveal>
+        <h3 class="marquee-title">Technologies I Work With</h3>
+        <div class="marquee-track">
+          <div class="marquee-content" id="marquee-content">
+            <span class="tech-pill">☕ Java</span>
+            <span class="tech-pill">🌱 Spring Boot</span>
+            <span class="tech-pill">🔴 Redis</span>
+            <span class="tech-pill">🐘 PostgreSQL</span>
+            <span class="tech-pill">🍃 MongoDB</span>
+            <span class="tech-pill">🐋 Docker</span>
+            <span class="tech-pill">☁️ AWS</span>
+            <span class="tech-pill">🐍 Python</span>
+            <span class="tech-pill">🤖 TensorFlow</span>
+            <span class="tech-pill">🔐 JWT</span>
+            <span class="tech-pill">🏛️ Microservices</span>
+            <span class="tech-pill">⚡ Kafka</span>
+            <span class="tech-pill">🔧 Git</span>
+            <span class="tech-pill">🐬 MySQL</span>
+            <span class="tech-pill">🛡️ RBAC</span>
+            <span class="tech-pill">📡 REST APIs</span>
+          </div>
+          <div class="marquee-content" aria-hidden="true">
+            <span class="tech-pill">☕ Java</span>
+            <span class="tech-pill">🌱 Spring Boot</span>
+            <span class="tech-pill">🔴 Redis</span>
+            <span class="tech-pill">🐘 PostgreSQL</span>
+            <span class="tech-pill">🍃 MongoDB</span>
+            <span class="tech-pill">🐋 Docker</span>
+            <span class="tech-pill">☁️ AWS</span>
+            <span class="tech-pill">🐍 Python</span>
+            <span class="tech-pill">🤖 TensorFlow</span>
+            <span class="tech-pill">🔐 JWT</span>
+            <span class="tech-pill">🏛️ Microservices</span>
+            <span class="tech-pill">⚡ Kafka</span>
+            <span class="tech-pill">🔧 Git</span>
+            <span class="tech-pill">🐬 MySQL</span>
+            <span class="tech-pill">🛡️ RBAC</span>
+            <span class="tech-pill">📡 REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION SECTION ========== -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">LEARNING PATH</span>
+        <h2 class="section-title">Education <span class="gradient-text">Background</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <!-- ---- EDU 01: VNIT Nagpur ---- -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-connector"></div>
+          <div class="timeline-dot active">
+            <div class="dot-inner"></div>
+            <div class="dot-pulse"></div>
+            <div class="dot-ring"></div>
+          </div>
+          <div class="timeline-card glass-card tl-card-primary">
+            <div class="tl-card-glow"></div>
+            <div class="tl-top-bar">
+              <div class="tl-company-badge">
+                <div class="tl-company-logo" style="background: white; padding: 2px;">
+                  <img src="assets/vnit-logo.png" alt="VNIT Logo" style="width: 100%; height: 100%; object-fit: contain; border-radius: 50%;" />
+                </div>
+                <div class="tl-company-info">
+                  <span class="tl-company-name">VNIT Nagpur</span>
+                  <span class="tl-company-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Nagpur, India
+                  </span>
+                </div>
+              </div>
+              <div class="tl-status-badge current-badge">
+                <span class="status-dot"></span>
+                Ongoing
+              </div>
+            </div>
+
+            <div class="tl-role-timeline">
+              <div class="tl-role-current">
+                <div class="tl-role-header">
+                  <h3 class="tl-role-title">Executive M.Tech in Applied AI</h3>
+                  <span class="tl-role-period">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    2024 – 2026
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-content">
+              <p class="tl-desc">Pursuing an advanced degree focusing on practical applications of Artificial Intelligence, Machine Learning, and deep neural networks in modern software systems.</p>
+              
+              <div class="tl-achievements">
+                <div class="tl-ach-item"><span class="tl-ach-dot"></span><span>Specializing in advanced Machine Learning and AI algorithms</span></div>
+                <div class="tl-ach-item"><span class="tl-ach-dot"></span><span>Applying AI concepts to distributed systems and backend architectures</span></div>
+                <div class="tl-ach-item"><span class="tl-ach-dot"></span><span>Researching LLM integrations and Generative AI for production environments</span></div>
+              </div>
+
+              <div class="tl-tags">
+                <span class="tl-tag">Artificial Intelligence</span>
+                <span class="tl-tag">Machine Learning</span>
+                <span class="tl-tag">Deep Learning</span>
+                <span class="tl-tag">Data Science</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- EDU 02: NMIMS ---- -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-connector"></div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-card-glow"></div>
+            <div class="tl-top-bar">
+              <div class="tl-company-badge">
+                <div class="tl-company-logo" style="background: white; padding: 2px;">
+                  <img src="assets/nmims-logo.png" alt="NMIMS Logo" style="width: 100%; height: 100%; object-fit: contain; border-radius: 50%;" />
+                </div>
+                <div class="tl-company-info">
+                  <span class="tl-company-name">NMIMS MPSTME</span>
+                  <span class="tl-company-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    India
+                  </span>
+                </div>
+              </div>
+              <div class="tl-period-badge">2020 – 2024</div>
+            </div>
+
+            <div class="tl-role-timeline">
+              <div class="tl-role-current">
+                <div class="tl-role-header" style="margin-bottom: 0;">
+                  <h3 class="tl-role-title">B.Tech in Information Technology</h3>
+                  <span class="tl-role-period" style="color:var(--accent-pink); font-weight:600;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    CGPA: 2.95/4.0
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-content" style="margin-top: 16px;">
+              <p class="tl-desc">Graduated with a strong foundation in core computer science subjects, software engineering principles, and full-stack development. Participated actively in technical events.</p>
+              
+              <div class="tl-achievements">
+                <div class="tl-ach-item"><span class="tl-ach-dot"></span><span>Mastered core CS fundamentals: Data Structures, Algorithms, and OOP</span></div>
+                <div class="tl-ach-item"><span class="tl-ach-dot"></span><span>Studied Database Management, Operating Systems, and Computer Networks</span></div>
+                <div class="tl-ach-item"><span class="tl-ach-dot"></span><span>Built multiple academic projects focusing on Java, Web Development, and Databases</span></div>
+              </div>
+
+              <div class="tl-tags">
+                <span class="tl-tag">Computer Science</span>
+                <span class="tl-tag">Java</span>
+                <span class="tl-tag">DBMS</span>
+                <span class="tl-tag">Algorithms</span>
+                <span class="tl-tag">Networking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS SECTION ========== -->
+  <section id="certifications" class="section certifications-section">
+    <div class="container" style="padding-top: 40px;">
+      <div class="section-header">
+        <span class="section-tag">UPSKILLING</span>
+        <h2 class="section-title">Licenses &amp; <span class="gradient-text">Certifications</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="education-grid">
+        <div class="edu-card glass-card" data-reveal>
+          <div class="edu-icon">📜</div>
+          <div class="edu-content">
+            <span class="edu-type">Certification</span>
+            <h3 class="edu-degree">Spring Boot & Microservices</h3>
+            <span class="edu-field">Backend Architecture</span>
+            <p class="edu-institution">Udemy / Online Platform</p>
+            <span class="edu-year">2023</span>
+          </div>
+          <div class="edu-badge">Certified</div>
+        </div>
+
+        <div class="edu-card glass-card" data-reveal>
+          <div class="edu-icon">🤖</div>
+          <div class="edu-content">
+            <span class="edu-type">Certification</span>
+            <h3 class="edu-degree">Machine Learning & Deep Learning</h3>
+            <span class="edu-field">AI Systems Engineering</span>
+            <p class="edu-institution">Coursera / DeepLearning.AI</p>
+            <span class="edu-year">2023</span>
+          </div>
+          <div class="edu-badge">Certified</div>
+        </div>
+        <div class="edu-card glass-card" data-reveal>
+          <div class="edu-icon">🛡️</div>
+          <div class="edu-content">
+            <span class="edu-type">Credential ID: WKZJL57VD4E9</span>
+            <h3 class="edu-degree">Google Foundations of Cybersecurity</h3>
+            <span class="edu-field">Cybersecurity, Information Security</span>
+            <p class="edu-institution">Google</p>
+            <span class="edu-year">Jan 2024</span>
+          </div>
+          <div class="edu-badge">Certified</div>
+        </div>
+
+        <div class="edu-card glass-card" data-reveal>
+          <div class="edu-icon">☁️</div>
+          <div class="edu-content">
+            <span class="edu-type">Credential ID: JNYJ6ZYZBC2R</span>
+            <h3 class="edu-degree">Introduction to Cloud Identity</h3>
+            <span class="edu-field">Cloud Computing, IDM</span>
+            <p class="edu-institution">Google Cloud</p>
+            <span class="edu-year">Dec 2023</span>
+          </div>
+          <div class="edu-badge">Certified</div>
+        </div>
+
+        <div class="edu-card glass-card" data-reveal>
+          <div class="edu-icon">🐍</div>
+          <div class="edu-content">
+            <span class="edu-type">Credential ID: 86BEB042241A</span>
+            <h3 class="edu-degree">Python (Basic) Certificate</h3>
+            <span class="edu-field">Python, Problem Solving</span>
+            <p class="edu-institution">HackerRank</p>
+            <span class="edu-year">Certified</span>
+          </div>
+          <div class="edu-badge">Certified</div>
+        </div>
+
+        <div class="edu-card glass-card" data-reveal>
+          <div class="edu-icon">💻</div>
+          <div class="edu-content">
+            <span class="edu-type">Credential ID: 4AF76CF92E00</span>
+            <h3 class="edu-degree">Software Engineer Intern Certificate</h3>
+            <span class="edu-field">Python, SQL</span>
+            <p class="edu-institution">HackerRank</p>
+            <span class="edu-year">Certified</span>
+          </div>
+          <div class="edu-badge">Certified</div>
+        </div>
+
+        <div class="edu-card glass-card" data-reveal>
+          <div class="edu-icon">🧠</div>
+          <div class="edu-content">
+            <span class="edu-type">Credential ID: N2ZDDT9E8QNS</span>
+            <h3 class="edu-degree">Introduction to Artificial Intelligence</h3>
+            <span class="edu-field">Artificial Intelligence</span>
+            <p class="edu-institution">IBM</p>
+            <span class="edu-year">Feb 2021</span>
+          </div>
+          <div class="edu-badge">Certified</div>
+        </div>
+
+        <div class="edu-card glass-card" data-reveal>
+          <div class="edu-icon">📊</div>
+          <div class="edu-content">
+            <span class="edu-type">Credential ID: ZB4XPRHKA67E</span>
+            <h3 class="edu-degree">Big Data & Machine Learning Fundamentals</h3>
+            <span class="edu-field">Google Cloud Platform</span>
+            <p class="edu-institution">Google Cloud</p>
+            <span class="edu-year">Dec 2023</span>
+          </div>
+          <div class="edu-badge">Certified</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BEYOND THE CODE SECTION ========== -->
+  <section id="beyond-code" class="section bento-section">
+    <div class="container">
+      
+      <!-- Transition Text -->
+      <div class="bento-transition" data-reveal>
+        <p class="bento-transition-text">
+          When I’m not building systems,<br />
+          I’m building <span class="gradient-text">discipline</span>, <span class="gradient-text">competition</span>, and <span class="gradient-text">experiences</span>.
+        </p>
+      </div>
+
+      <div class="section-header">
+        <span class="section-tag">EXTRA CURRICULAR / LIFE OUTSIDE CODE</span>
+        <h2 class="section-title">Beyond The <span class="gradient-text">Code</span>.</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Performance • Discipline • Competition • Passion</p>
+      </div>
+
+      <div class="bento-grid">
+        
+        <!-- CARD 01: Karate (Large Span) -->
+        <div class="bento-card bento-large bento-theme-gold glass-card" data-reveal>
+          <div class="bento-glow"></div>
+          <div class="bento-header">
+            <span class="bento-icon">🥋</span>
+            <span class="bento-title">DISCIPLINE MODE</span>
+          </div>
+          <h3 class="bento-heading">OUT ON<br/>THE MAT.</h3>
+          <p class="bento-desc">State-level Karate athlete with competitive mindset and disciplined training.</p>
+          
+          <div class="bento-medal-wrapper">
+            <div class="bento-pulse-ring"></div>
+            <div class="bento-medal">🥇 State Gold Medal</div>
+          </div>
+
+          <div class="bento-stats horizontal">
+            <div class="bento-stat"><span>BELTS EARNED</span></div>
+            <div class="bento-stat"><span>COMPETITIONS</span></div>
+            <div class="bento-stat"><span>STATE GOLD</span></div>
+          </div>
+          <div class="bento-quote">"Discipline builds everything."</div>
+        </div>
+
+        <!-- CARD 02: Football -->
+        <div class="bento-card bento-medium bento-theme-cyan glass-card" data-reveal>
+          <div class="bento-glow"></div>
+          <div class="bento-header">
+            <span class="bento-icon">⚽</span>
+            <span class="bento-title">ON THE FIELD</span>
+          </div>
+          <h3 class="bento-heading">PLAY.<br/>LEAD.<br/>WIN.</h3>
+          <p class="bento-desc">Represented at state level football and developed teamwork, adaptability, and leadership.</p>
+          <div class="bento-achievement">State Level Football</div>
+          
+          <div class="bento-field-animation">
+            <div class="field-line"></div>
+            <div class="field-line"></div>
+            <div class="field-line"></div>
+          </div>
+
+          <div class="bento-stats horizontal">
+            <div class="bento-stat"><span>POSITION</span></div>
+            <div class="bento-stat"><span>MATCHES</span></div>
+            <div class="bento-stat"><span>TOURNAMENTS</span></div>
+          </div>
+          <div class="bento-quote">"Winning begins before kickoff."</div>
+        </div>
+
+        <!-- CARD 03: Cricket -->
+        <div class="bento-card bento-medium bento-theme-neon glass-card" data-reveal>
+          <div class="bento-glow"></div>
+          <div class="bento-header">
+            <span class="bento-icon">🏏</span>
+            <span class="bento-title">CRICKET PROFILE</span>
+          </div>
+          <h3 class="bento-heading">OUT ON<br/>THE PITCH.</h3>
+          <p class="bento-desc">Played competitive cricket and developed strategic thinking and decision making.</p>
+          <div class="bento-achievement">State Level Cricket</div>
+          
+          <div class="bento-ball-animation">
+            <div class="cricket-ball"></div>
+            <div class="ball-trail"></div>
+          </div>
+
+          <div class="bento-stats horizontal">
+            <div class="bento-stat"><span>MATCHES</span></div>
+            <div class="bento-stat"><span>TEAMWORK</span></div>
+            <div class="bento-stat"><span>PERFORMANCE</span></div>
+          </div>
+          <div class="bento-quote">"Pressure reveals character."</div>
+        </div>
+
+        <!-- CARD 04: Music -->
+        <div class="bento-card bento-tall bento-theme-pink glass-card" data-reveal>
+          <div class="bento-glow"></div>
+          <div class="bento-header">
+            <span class="bento-icon">🎵</span>
+            <span class="bento-title">NOW PLAYING</span>
+          </div>
+          <h3 class="bento-heading">SOUNDTRACK<br/>OF BUILDING.</h3>
+          <p class="bento-desc">Music helps me think, design, and code.</p>
+          
+          <div class="bento-music-player">
+            <div class="waveform">
+              <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+            <div class="player-activities">
+              <span>Late-night coding</span>
+              <span>Focus playlists</span>
+              <span>Travel listening</span>
+            </div>
+          </div>
+
+          <div class="bento-tags">
+            <span class="bento-tag">Lo-fi</span>
+            <span class="bento-tag">Bollywood</span>
+            <span class="bento-tag">EDM</span>
+            <span class="bento-tag">Instrumental</span>
+          </div>
+          <div class="bento-quote">"Good systems need good sound."</div>
+        </div>
+
+        <!-- CARD 05: Travel -->
+        <div class="bento-card bento-small bento-theme-purple glass-card" data-reveal>
+          <div class="bento-glow"></div>
+          <div class="bento-header">
+            <span class="bento-icon">✈️</span>
+            <span class="bento-title">TRAVEL LOG</span>
+          </div>
+          <h3 class="bento-heading">EXPLORE.<br/>LEARN.<br/>BUILD.</h3>
+          <p class="bento-desc">Exploring places, meeting people, and learning beyond screens.</p>
+          
+          <div class="bento-map-animation">
+            <div class="map-marker m1"></div>
+            <div class="map-marker m2"></div>
+            <div class="map-marker m3"></div>
+          </div>
+
+          <div class="bento-stats horizontal">
+            <div class="bento-stat"><span>Cities visited</span></div>
+            <div class="bento-stat"><span>Events attended</span></div>
+            <div class="bento-stat"><span>Experiences</span></div>
+          </div>
+        </div>
+
+        <!-- CARD 06: Mindset -->
+        <div class="bento-card bento-small bento-theme-blue glass-card" data-reveal>
+          <div class="bento-glow"></div>
+          <div class="bento-header">
+            <span class="bento-icon">🧠</span>
+            <span class="bento-title">COMPETITIVE MINDSET</span>
+          </div>
+          <h3 class="bento-heading">THINK.<br/>BUILD.<br/>REPEAT.</h3>
+          <p class="bento-desc">Combining engineering with sports discipline.</p>
+          
+          <div class="bento-radar-animation">
+            <div class="radar-circle"></div>
+            <div class="radar-sweep"></div>
+          </div>
+
+          <div class="bento-stats horizontal">
+            <div class="bento-stat"><span>Focus</span></div>
+            <div class="bento-stat"><span>Consistency</span></div>
+            <div class="bento-stat"><span>Learning</span></div>
+            <div class="bento-stat"><span>Execution</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS SECTION ========== -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">MILESTONES</span>
+        <h2 class="section-title">Achievements &amp; <span class="gradient-text">Recognition</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card" data-reveal>
+          <div class="ach-glow"></div>
+          <div class="ach-icon">🏆</div>
+          <h3 class="ach-title">Production Systems</h3>
+          <p class="ach-desc">Built and deployed multiple production-grade microservices serving real users, handling high-throughput workloads with 99.9% uptime.</p>
+          <div class="ach-stat">Production Ready</div>
+        </div>
+
+        <div class="achievement-card glass-card" data-reveal>
+          <div class="ach-glow purple"></div>
+          <div class="ach-icon">⚡</div>
+          <h3 class="ach-title">Performance Engineering</h3>
+          <p class="ach-desc">Implemented Redis caching and optimization strategies reducing API response times by up to 70% and increasing throughput by 10x.</p>
+          <div class="ach-stat">70% Faster APIs</div>
+        </div>
+
+        <div class="achievement-card glass-card" data-reveal>
+          <div class="ach-glow blue"></div>
+          <div class="ach-icon">🔐</div>
+          <h3 class="ach-title">Security Architecture</h3>
+          <p class="ach-desc">Designed enterprise-grade JWT/RBAC security systems with zero security incidents, implementing industry best practices across all systems.</p>
+          <div class="ach-stat">Zero Breaches</div>
+        </div>
+
+        <div class="achievement-card glass-card" data-reveal>
+          <div class="ach-glow green"></div>
+          <div class="ach-icon">🤖</div>
+          <h3 class="ach-title">AI Integration Pioneer</h3>
+          <p class="ach-desc">Successfully integrated AI/ML models into production backend systems, bridging the gap between data science and backend engineering.</p>
+          <div class="ach-stat">AI-Powered</div>
+        </div>
+
+        <div class="achievement-card glass-card" data-reveal>
+          <div class="ach-glow orange"></div>
+          <div class="ach-icon">🏗️</div>
+          <h3 class="ach-title">Architecture Design</h3>
+          <p class="ach-desc">Architected scalable distributed systems from ground up, applying industry-standard patterns like CQRS, Event Sourcing, and Saga patterns.</p>
+          <div class="ach-stat">Scalable Design</div>
+        </div>
+
+        <div class="achievement-card glass-card" data-reveal>
+          <div class="ach-glow pink"></div>
+          <div class="ach-icon">🎓</div>
+          <h3 class="ach-title">NMIMS MPSTME Graduate</h3>
+          <p class="ach-desc">Graduated with a B.Tech in Information Technology from NMIMS MPSTME, building strong foundations in algorithms, data structures, and software engineering.</p>
+          <div class="ach-stat">B.Tech IT</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">LET'S CONNECT</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Whether you have an opportunity, project, or just want to connect — my inbox is always open.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-cards-col">
+          <!-- Email -->
+          <div class="contact-card glass-card" data-reveal id="contact-card-email">
+            <div class="contact-card-icon email-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">uditranjan11@gmail.com</span>
+            </div>
+            <div class="contact-card-actions">
+              <button class="contact-action-btn copy-btn" data-copy="uditranjan11@gmail.com" aria-label="Copy email" id="copy-email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              </button>
+              <a href="mailto:uditranjan11@gmail.com" class="contact-action-btn open-btn" aria-label="Open email" id="open-email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-card glass-card" data-reveal id="contact-card-phone">
+            <div class="contact-card-icon phone-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Phone</span>
+              <span class="contact-card-value">+91 9104456239</span>
+            </div>
+            <div class="contact-card-actions">
+              <button class="contact-action-btn copy-btn" data-copy="+919104456239" aria-label="Copy phone" id="copy-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              </button>
+              <a href="tel:+919104456239" class="contact-action-btn open-btn" aria-label="Call" id="open-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- LinkedIn -->
+          <div class="contact-card glass-card" data-reveal id="contact-card-linkedin">
+            <div class="contact-card-icon linkedin-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-value">udit-ranjan-5b7b67222</span>
+            </div>
+            <div class="contact-card-actions">
+              <button class="contact-action-btn copy-btn" data-copy="https://www.linkedin.com/in/udit-ranjan-5b7b67222/" aria-label="Copy LinkedIn" id="copy-linkedin">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              </button>
+              <a href="https://www.linkedin.com/in/udit-ranjan-5b7b67222/" target="_blank" rel="noopener noreferrer" class="contact-action-btn open-btn" aria-label="Open LinkedIn" id="open-linkedin">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+          <div class="contact-card glass-card" data-reveal id="contact-card-github">
+            <div class="contact-card-icon github-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-value">github.com/Phonix10</span>
+            </div>
+            <div class="contact-card-actions">
+              <button class="contact-action-btn copy-btn" data-copy="https://github.com/Phonix10" aria-label="Copy GitHub" id="copy-github">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              </button>
+              <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="contact-action-btn open-btn" aria-label="Open GitHub" id="open-github">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-col" data-reveal>
+          <div class="contact-form-wrapper glass-card">
+            <h3 class="form-title">Send a Message</h3>
+            <p class="form-subtitle">I typically respond within 24 hours.</p>
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/xbjnvjkz" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="Your name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email</label>
+                  <input type="email" id="contact-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="What's this about?" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary submit-btn" id="btn-submit-contact">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send Message
+              </button>
+              <div class="form-status" id="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <canvas class="footer-canvas" id="footer-canvas"></canvas>
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">UR<span class="logo-dot"></span></a>
+          <p class="footer-tagline">Building scalable backend systems,<br />AI-powered platforms & production-grade software.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-links-col">
+            <h4>Navigation</h4>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+          </div>
+          <div class="footer-links-col">
+            <h4>More</h4>
+            <a href="#github">GitHub</a>
+            <a href="#education">Education</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-links-col">
+            <h4>Connect</h4>
+            <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" id="footer-github">GitHub</a>
+            <a href="https://www.linkedin.com/in/udit-ranjan-5b7b67222/" target="_blank" rel="noopener noreferrer" id="footer-linkedin">LinkedIn</a>
+            <a href="mailto:uditranjan11@gmail.com" id="footer-email">Email</a>
+            <a href="assets/resume.pdf" download id="footer-resume">Resume</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://github.com/Phonix10" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="GitHub" id="footer-social-github">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/udit-ranjan-5b7b67222/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn" id="footer-social-linkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:uditranjan11@gmail.com" class="footer-social-btn" aria-label="Email" id="footer-social-email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Designed &amp; Engineered by <span class="gradient-text">Udit Ranjan</span></p>
+        <p class="footer-copy">© 2026 All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toast-msg">Copied!</span>
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

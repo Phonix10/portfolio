@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://uditranjan.vercel.app/sitemap.xml
+
+# Disallow admin areas (none exist, this is a portfolio)
+Disallow: /assets/resume.pdf
